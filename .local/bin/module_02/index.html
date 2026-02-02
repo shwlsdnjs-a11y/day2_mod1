@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>슬라임의 역습 - Slime Rising</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="title-screen">
+            <h1>🟢 슬라임의 역습 🟢</h1>
+            <p class="subtitle">Slime Rising</p>
+            <div class="story">
+                <p>당신은 레벨 1 슬라임입니다.</p>
+                <p>용사들이 떼거지로 몰려옵니다!</p>
+                <p>그들을 흡수하여 만능 슬라임이 되세요!</p>
+            </div>
+            <button id="start-btn">게임 시작</button>
+            <div class="controls-info">
+                <p>🎮 조작법: 방향키 또는 WASD</p>
+                <p>💡 용사에게 닿으면 흡수!</p>
+            </div>
+        </div>
+
+        <div id="game-screen" class="hidden">
+            <div id="hud">
+                <div id="stats">
+                    <div class="stat">
+                        <span class="stat-label">레벨</span>
+                        <span id="level">1</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">HP</span>
+                        <div class="bar-container">
+                            <div id="hp-bar" class="bar"></div>
+                        </div>
+                        <span id="hp-text">100/100</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">EXP</span>
+                        <div class="bar-container">
+                            <div id="exp-bar" class="bar exp"></div>
+                        </div>
+                        <span id="exp-text">0/50</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">처치</span>
+                        <span id="kills">0</span>
+                    </div>
+                </div>
+                <div id="abilities">
+                    <span class="ability-label">흡수한 능력:</span>
+                    <div id="ability-list"></div>
+                </div>
+            </div>
+
+            <div id="arena">
+                <div id="slime" class="slime">
+                    <div class="slime-body">
+                        <div class="slime-eye left"></div>
+                        <div class="slime-eye right"></div>
+                        <div class="slime-mouth"></div>
+                    </div>
+                    <div class="slime-shadow"></div>
+                </div>
+            </div>
+
+            <div id="wave-indicator" class="hidden">
+                <span>WAVE <span id="wave-number">1</span></span>
+            </div>
+
+            <div id="ability-popup" class="hidden">
+                <div class="popup-content">
+                    <h2>능력 흡수!</h2>
+                    <p id="ability-name"></p>
+                    <p id="ability-desc"></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="game-over" class="hidden">
+            <h1>게임 오버</h1>
+            <div id="final-stats">
+                <p>최종 레벨: <span id="final-level">1</span></p>
+                <p>처치한 용사: <span id="final-kills">0</span></p>
+                <p>흡수한 능력: <span id="final-abilities">0</span></p>
+            </div>
+            <button id="restart-btn">다시 시작</button>
+        </div>
+
+        <div id="victory" class="hidden">
+            <h1>🎉 만능 슬라임 달성! 🎉</h1>
+            <p class="victory-subtitle">모든 능력을 흡수했습니다!</p>
+            <div id="victory-stats">
+                <p>최종 레벨: <span id="victory-level">1</span></p>
+                <p>처치한 용사: <span id="victory-kills">0</span></p>
+            </div>
+            <button id="victory-restart-btn">다시 시작</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
