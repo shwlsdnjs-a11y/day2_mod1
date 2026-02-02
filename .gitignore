@@ -1,0 +1,54 @@
+# Windows system files
+NTUSER.DAT*
+ntuser.dat*
+ntuser.ini
+*.regtrans-ms
+*.blf
+
+# Windows user folders
+3D Objects/
+AppData/
+Application Data/
+Contacts/
+Cookies/
+Desktop/
+Documents/
+Downloads/
+Favorites/
+IntelGraphicsProfiles/
+Links/
+Local Settings/
+MicrosoftEdgeBackups/
+Music/
+My Documents/
+OneDrive/
+Pictures/
+Recent/
+Saved Games/
+Searches/
+SendTo/
+Videos/
+시작 메뉴/
+
+# SSH keys
+.ssh/
+
+# Claude Code
+.claude.json
+.claude.json.backup.*
+.claude/
+
+# Other tools
+.antigravity/
+.gemini/
+
+# Executables
+*.exe
+
+# Local data
+.local/share/
+
+# Root level test files (if not part of project)
+/index.html
+/script.js
+/style.css
