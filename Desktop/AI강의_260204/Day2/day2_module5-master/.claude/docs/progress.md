@@ -1,5 +1,20 @@
 # 프로젝트 진행 상황
 
+## [2026-02-05 15:30] Backend Requirements.txt 최적화
+
+### 변경된 파일
+- `backend/requirements.txt`: 실제 사용 패키지만 추출하여 재작성 (10개 → 7개)
+- `backend/README.md`: Backend 설치 및 실행 가이드 추가
+- `backend/requirements-analysis.md`: 패키지 사용 분석 리포트
+
+### 작업 요약
+- 전체 Python 파일 스캔하여 실제 사용되는 패키지 추출
+- 미사용 패키지 3개 제거 (python-dotenv, python-multipart, pydantic[email])
+- 모든 패키지에 명확한 버전 지정
+- 주석으로 각 패키지 용도 설명
+- 패키지별 사용 위치 및 의존성 트리 문서화
+- Backend README 작성 (설치, 실행, API 문서, 환경변수)
+
 ## [2026-02-05 15:00] CODE-review Skill 구현 및 린터 설정
 
 ### 변경된 파일
@@ -59,6 +74,8 @@
 - [x] 초기 커밋 및 푸시 완료
 - [x] ENV-setup skill 구현
 - [x] CODE-review skill 구현
+- [x] Backend requirements.txt 최적화
+- [ ] Frontend package.json 최적화
 - [ ] 린터 도구 설치 및 테스트
 - [ ] PROJECT-init skill 구현 (새 도메인 추가 자동화)
 - [ ] git_commit skill 개선 (타임스탬프 자동화)

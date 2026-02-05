@@ -7,8 +7,11 @@
 - [x] 환경변수 파일 생성 (Backend/Frontend)
 - [x] CODE-review skill 구현
 - [x] 린터 설정 파일 생성 (Python/TypeScript)
+- [x] Backend requirements.txt 최적화 (10개 → 7개)
+- [x] Backend README.md 작성
 
 ## 진행 중
+- [ ] Frontend 의존성 최적화
 - [ ] 린터 도구 설치 및 테스트
 
 ## 대기 중 (우선순위 높음)

@@ -1,0 +1,20 @@
+# FastAPI 웹 프레임워크
+fastapi==0.109.2
+
+# ASGI 서버
+uvicorn[standard]==0.27.1
+
+# 데이터베이스 ORM
+sqlalchemy==2.0.25
+
+# 데이터 검증 및 직렬화
+pydantic==2.5.3
+
+# JWT 인증 (python-jose)
+python-jose[cryptography]==3.3.0
+
+# 비밀번호 해싱
+passlib[bcrypt]==1.7.4
+
+# HTTP 클라이언트 (외부 API 호출)
+requests==2.31.0
