@@ -1,0 +1,8 @@
+# Development dependencies
+ruff==0.1.9
+black==23.12.1
+mypy==1.8.0
+bandit==1.7.6
+pytest==7.4.3
+pytest-cov==4.1.0
+httpx==0.25.2
